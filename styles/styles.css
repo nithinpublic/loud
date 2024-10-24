@@ -6,9 +6,25 @@ html {
     text-align: center;
 }
 
+#title {
+    color: rgb(243, 32, 32);
+}
 #textarea {
     width: 100%;
     height: calc(100% - 200px);
-    background-color: rgba(165, 42, 42, 0.2);
+    border: none;
+    /* background-color: rgba(165, 42, 42, 0.2); */
     padding: 16px;
+    font-size: 18px;
+}
+#textarea:focus {
+    border: none;
+    outline: none;
+}
+#flush-button {
+    height: 48px;
+    width: 128px;
+    font-size: 18px;
+    background-color: #1e2696;
+    color: #ffffff;
 }
