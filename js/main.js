@@ -1,5 +1,5 @@
 function playMusic(){
-    var music = new Audio('/audio/flush_sound.mp3');
+    var music = new Audio('audio/flush_sound.mp3');
     music.play();
     }
 
