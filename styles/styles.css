@@ -4,6 +4,7 @@ html {
     width: 100%;
     margin: 0;
     text-align: center;
+    background-color: #f2f3f8;
 }
 
 #title-logo {
@@ -11,24 +12,27 @@ html {
     padding: 16px;
 }
 #textarea {
-    width: 100%;
-    height: calc(100% - 200px);
+    width: calc(100% - 64px);
+    height: calc(100% - 240px);
     border: none;
     /* background-color: rgba(165, 42, 42, 0.2); */
     padding: 16px;
     font-size: 18px;
+    border-radius: 16px;
 }
 #textarea:focus {
     border: none;
     outline: none;
 }
+
 #flush-button {
     height: 64px;
     width: 256px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #0000e7;
-    border: none;
+    border: #bfbfcb solid 2px;
     outline: none;
-    border-radius: 8px;
+    border-radius: 16px;
     color: #ffffff;
+    margin: 16px;
 }
