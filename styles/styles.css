@@ -7,7 +7,15 @@ html {
     /* background: linear-gradient(to bottom, #ffffff, #f2f3f8) */
 }
 #title-container {
-    text-align: center;
+    text-align: left;
+
+    width: calc(100% - 128px);
+}
+#title-text {
+    font-size: 64px;
+    font-family: sans-serif;
+    color: #d0d0d0;
+    padding-left: 64px;
 }
 
 #title-logo {
@@ -23,6 +31,7 @@ html {
     font-size: 24px;
     /* border-radius: 32px 32px 160px 160px; */
     resize: none;
+    
 }
 #textarea:focus {
     border: none;
