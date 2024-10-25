@@ -6,8 +6,9 @@ html {
     text-align: center;
 }
 
-#title {
-    color: rgb(243, 32, 32);
+#title-logo {
+    height: 48px;
+    padding: 16px;
 }
 #textarea {
     width: 100%;
@@ -22,9 +23,12 @@ html {
     outline: none;
 }
 #flush-button {
-    height: 48px;
-    width: 128px;
+    height: 64px;
+    width: 256px;
     font-size: 18px;
-    background-color: #1e2696;
+    background-color: #0000e7;
+    border: none;
+    outline: none;
+    border-radius: 8px;
     color: #ffffff;
 }
