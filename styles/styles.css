@@ -4,21 +4,25 @@ html {
     width: 100%;
     margin: 0;
     text-align: center;
-    background-color: #f2f3f8;
+    /* background: linear-gradient(to bottom, #ffffff, #f2f3f8) */
+}
+#title-container {
+    text-align: center;
 }
 
 #title-logo {
-    height: 48px;
+    height: 32px;
     padding: 16px;
 }
 #textarea {
-    width: calc(100% - 64px);
+    width: calc(100% - 128px);
     height: calc(100% - 240px);
     border: none;
     /* background-color: rgba(165, 42, 42, 0.2); */
-    padding: 16px;
-    font-size: 18px;
-    border-radius: 16px;
+    padding: 32px;
+    font-size: 24px;
+    /* border-radius: 32px 32px 160px 160px; */
+    resize: none;
 }
 #textarea:focus {
     border: none;
@@ -27,12 +31,12 @@ html {
 
 #flush-button {
     height: 64px;
-    width: 256px;
+    width: 216px;
     font-size: 20px;
     background-color: #0000e7;
     border: #bfbfcb solid 2px;
     outline: none;
-    border-radius: 16px;
+    border-radius: 160px;
     color: #ffffff;
     margin: 16px;
 }
