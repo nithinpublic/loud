@@ -14,7 +14,7 @@ html {
 #title-text {
     font-size: 64px;
     font-family: sans-serif;
-    color: #d0d0d0;
+    color: #e8e8e8;
     padding-left: 64px;
 }
 
@@ -26,7 +26,7 @@ html {
     width: calc(100% - 128px);
     height: calc(100% - 240px);
     border: none;
-    /* background-color: rgba(165, 42, 42, 0.2); */
+    background-color: #dadada;
     padding: 32px;
     font-size: 24px;
     /* border-radius: 32px 32px 160px 160px; */
@@ -43,7 +43,7 @@ html {
     width: 216px;
     font-size: 20px;
     background-color: #0000e7;
-    border: #bfbfcb solid 2px;
+    border: #000000 solid 2px;
     outline: none;
     border-radius: 160px;
     color: #ffffff;
