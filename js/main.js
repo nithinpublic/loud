@@ -20,7 +20,7 @@ document.querySelector("#flush-button").addEventListener("click", () => {
 
 
 var c = 0
-function flush() {
+function flushOld() {
     delay = 1
     waterElements = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890@#%^&œþ¥øßðƒ©"
 
@@ -39,7 +39,7 @@ function flush() {
             water += waterElements.charAt(Math.ceil((waterElements.length) * (Math.random())))
         }
 
-        if (airgapLength >= 0) {
+        if (c < 10) {
             textbox.value = thoughts + airgap + water
             c += 1
             airgapLength -= 1
@@ -49,3 +49,37 @@ function flush() {
     animateFlush()
 }
 
+
+String.prototype.replaceAt = function(index, replacement) {
+    return this.substring(0, index) + replacement + this.substring(index + replacement.length);
+}
+function flush() {
+    thoughts = textbox.value
+    waterElements = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890@#%^&œþ¥øßðƒ©"
+
+    wateredText = thoughts
+
+    i = 0
+    function thoughtReplacer(){
+        
+        
+        if (i < wateredText.length){
+            for(j=0;j<=i;j++){
+                randomCharacter = waterElements.charAt(Math.ceil((waterElements.length) * (Math.random())))
+                wateredText = wateredText.replaceAt(j,randomCharacter)
+            }
+            
+            i=i+1
+            textbox.value = wateredText
+            setTimeout(thoughtReplacer, 20)
+
+        }
+    }
+    thoughtReplacer()
+
+
+
+  
+    
+   
+}
