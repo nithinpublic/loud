@@ -14,7 +14,7 @@ html {
 #title-text {
     font-size: 64px;
     font-family: sans-serif;
-    color: #e8e8e8;
+    color: #9e9eba;
     padding: 32px;
 }
 
@@ -40,12 +40,12 @@ html {
 
 #flush-button {
     height: 64px;
-    width: 216px;
+    width: 128px;
     font-size: 20px;
-    background-color: #0000e7;
-    border: #000000 solid 2px;
+    background-color: #101030;
+    border: #6463a8 solid 1px;
     outline: none;
-    border-radius: 160px;
+    border-radius: 9px;
     color: #ffffff;
     margin: 16px;
 }
