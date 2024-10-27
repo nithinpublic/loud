@@ -55,11 +55,12 @@ String.prototype.replaceAt = function(index, replacement) {
 }
 function flush() {
     thoughts = textbox.value
-    waterElements = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890@#%^&œþ¥øßðƒ©"
+    waterElements = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890@#%&œþ¥øßðƒ©♥♥♥●₳"
 
     wateredText = thoughts
 
     i = 0
+    acceleration = 0
     function thoughtReplacer(){
         
         
@@ -69,10 +70,20 @@ function flush() {
                 wateredText = wateredText.replaceAt(j,randomCharacter)
             }
             
-            i=i+1
+            i= i + 1 + acceleration
+            acceleration = acceleration + 0.1
             textbox.value = wateredText
-            setTimeout(thoughtReplacer, 20)
+            setTimeout(thoughtReplacer, (300/(i+1))+10)
 
+        } else {
+            console.log("done");
+            if (i < 500) {
+                randomCharacter = waterElements.charAt(Math.ceil((waterElements.length) * (Math.random())))
+                wateredText += randomCharacter
+                thoughtReplacer()
+
+            }
+            
         }
     }
     thoughtReplacer()
