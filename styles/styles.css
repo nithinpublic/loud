@@ -4,7 +4,7 @@ html {
     width: 100%;
     margin: 0;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #f6f4ef;
 }
 #title-container {
     text-align: left;
@@ -13,8 +13,9 @@ html {
 }
 #title-text {
     font-size: 64px;
-    font-family: sans-serif;
-    color: #9e9eba;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    color: #6e6c78;
     padding: 32px;
 }
 
@@ -26,12 +27,13 @@ html {
     width: calc(100% - 64px);
     height: calc(100% - 240px);
     border: none;
-    background-color: #ffffff;
+    background-color: #f6f4ef;
     padding: 0px;
     font-size: 24px;
     /* border-radius: 32px 32px 160px 160px; */
     resize: none;
     line-height: 1;
+    font-family: "Roboto Mono", monospace;
     
 }
 #textarea:focus {
@@ -42,6 +44,7 @@ html {
 #flush-button {
     height: 64px;
     width: 128px;
+    font-family: "Roboto Mono", monospace;
     font-size: 20px;
     background-color: #101030;
     border: #6463a8 solid 1px;
