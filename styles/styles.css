@@ -52,7 +52,8 @@ html {
     /* border: #6463a8 solid 1px; */
     border: none;
     outline: none;
-    border-radius: 9px;
+    border-radius: 16px;
     color: #ffffff;
     margin: 16px;
+    box-shadow: -3px 3px 0px #C91C25;
 }
