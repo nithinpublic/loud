@@ -9,7 +9,7 @@ textbox = document.querySelector("textarea")
 
 document.querySelector("#flush-button").addEventListener("click", () => {
     flush()
-    playMusic()
+    //playMusic()
 })
 
 String.prototype.replaceAt = function (index, replacement) {
