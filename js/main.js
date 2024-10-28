@@ -9,7 +9,7 @@ textbox = document.querySelector("textarea")
 
 document.querySelector("#flush-button").addEventListener("click", () => {
     flush()
-    //playMusic()
+    playMusic()
 })
 
 String.prototype.replaceAt = function (index, replacement) {
@@ -52,14 +52,19 @@ function flush() {
                 console.log("rand=", randomCharacter);
             }
             if (i >= depth) {
-                airgap += airgapElement
+                // airgap += airgapElement
+                airgap = ""
+                for(j=0;j<=i;j++){
+                    airgap +=  airgapElement
+                }
             }
             i = i + 1 + acceleration
-            // acceleration = acceleration + 0.1
+            acceleration = acceleration + 0.1
             textbox.value = airgap + wateredText
             console.log(i);
 
-            setTimeout(flusher, (300 / (i + 1)) + 10)
+            // setTimeout(flusher, (500 / (i + 1)) + 10)
+            setTimeout(flusher, 30)
         }
     }
 
