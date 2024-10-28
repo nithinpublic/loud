@@ -50,8 +50,8 @@ html {
     font-size: 20px;
     /* background-color: #101030; */
     background-color: #F3594E;
-    /* border: #6463a8 solid 1px; */
-    border: none;
+    border: #000000 solid 1px;
+    /* border: none; */
     outline: none;
     border-radius: 16px;
     color: #ffffff;
