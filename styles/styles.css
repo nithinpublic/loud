@@ -4,7 +4,7 @@ html {
     width: 100%;
     margin: 0;
     text-align: center;
-    background-color: #f6f4ef;
+    background-color: #fffef7;
 }
 #title-container {
     text-align: left;
@@ -20,14 +20,14 @@ html {
 }
 
 #title-logo {
-    height: 32px;
-    padding: 16px;
+    height: 64px;
+    padding: 32px;
 }
 #textarea {
     width: calc(100% - 64px);
     height: calc(100% - 240px);
     border: none;
-    background-color: #f6f4ef;
+    background-color: #fffef7;
     padding: 0px;
     font-size: 24px;
     /* border-radius: 32px 32px 160px 160px; */
@@ -43,11 +43,14 @@ html {
 
 #flush-button {
     height: 64px;
-    width: 128px;
+    width: 70%;
+    max-width: 320px;
     font-family: "Roboto Mono", monospace;
     font-size: 20px;
-    background-color: #101030;
-    border: #6463a8 solid 1px;
+    /* background-color: #101030; */
+    background-color: #F3594E;
+    /* border: #6463a8 solid 1px; */
+    border: none;
     outline: none;
     border-radius: 9px;
     color: #ffffff;
