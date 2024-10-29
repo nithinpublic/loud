@@ -9,9 +9,10 @@ html {
 
 }
 
+
+
 #title-container {
     text-align: left;
-
     width: calc(100% - 128px);
 }
 
@@ -24,13 +25,13 @@ html {
 }
 
 #title-logo {
-    height: 64px;
+    height: 56px;
     padding: 32px;
 }
 
 #textarea {
     width: calc(100% - 64px);
-    height: calc(100% - 320px);
+    height: calc(100% - 290px);
     border: none;
     background-color: transparent;
     padding: 16px;
@@ -55,7 +56,7 @@ html {
 }
 
 .flush-button {
-    /* height: 64px; */
+    /* height: 80px; */
     width: 70%;
     max-width: 320px;
     font-family: "Roboto Mono", monospace;
@@ -65,9 +66,6 @@ html {
     /* background: #F3594E url('../images/flush_wave_bg.png'); */
     background-size: contain;
     background-position-x: 0px;
-
-
-
     /* border: #000000 solid 1px; */
     border: none;
     outline: none;
@@ -76,14 +74,11 @@ html {
     margin: 16px;
     box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #0013721f;
     line-height: 0px;
-    padding: 48px;
-    display: flex;
+    padding: 40px;
+    /* display: flex;
     justify-content: center;
-    margin: auto;
+    margin: auto; */
     margin-top: 16px;
-
-
-
 }
 
 .flush-button-animate {
