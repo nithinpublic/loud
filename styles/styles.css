@@ -54,7 +54,7 @@ html {
     font-family: "Roboto Mono", monospace;
     font-size: 24px;
     background-color: #F3594E;
-    /* background: #F3594E url('/images/flush_wave_bg.png'); */
+    /* background: #F3594E url('../images/flush_wave_bg.png'); */
     background-size: contain;
     background-position-x: 0px;
 
@@ -81,7 +81,7 @@ html {
 .flush-button-animate {
     box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #00137200;
     translate: -3px 3px;
-    background: #F3594E url('/images/flush_wave_bg.png');
+    background: #F3594E url('../images/flush_wave_bg.png');
     animation: waves 400ms infinite linear;
 }
 
