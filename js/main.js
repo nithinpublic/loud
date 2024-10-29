@@ -2,18 +2,40 @@ console.clear()
 var flushSound = new Audio('audio/flush_sound.mp3');
 var errorSound = new Audio('audio/error.mp3')
 
-// function playMusic() {
-//     var music = new Audio('audio/flush_sound.mp3');
-//     music.play();
-// }
-// function playErrorSound() {
-//     var music = new Audio('audio/error.mp3')
-//     music.play()
-// }
-
 
 textbox = document.querySelector("textarea")
 flushButton = document.querySelector("#flush-button")
+
+
+placeholderContent = [
+    "Type your loud thoughts...",
+    "Type your bottled up anger...",
+    "Type your negative feelings...",
+    "Type your worries...",
+    "Type your noise...",
+    "Don't hold back...",
+    "Type anything...",
+    "And watch them go away...",
+    "And watch them go away..."
+]
+pi = 0
+function loopPlaceholder() {
+    console.log("looper");
+    
+    textbox.placeholder = placeholderContent[pi]
+    pi ++
+    if(pi>=placeholderContent.length){
+        pi = 0
+    }
+
+    setTimeout(() => {
+        if(document.querySelector("#textarea:placeholder-shown")){
+            console.log("xo");
+            loopPlaceholder()
+        }
+    }, 1500);
+}
+loopPlaceholder()
 
 flushButton.addEventListener("click", () => {
     if (textbox.value) {
@@ -95,6 +117,7 @@ function flush() {
             document.querySelector("#title-logo ").classList.remove("vibrate")
             flushButton.disabled = false
             flushButton.classList.remove("flush-button-animate")
+            loopPlaceholder()
         }
     }
     flusher()

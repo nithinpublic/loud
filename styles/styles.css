@@ -41,6 +41,9 @@ html {
     border-radius: 16px;
 
 }
+#textarea::placeholder {
+    color: #f8555890;
+}
 
 #textarea:focus {
     border: none;
@@ -48,7 +51,7 @@ html {
 }
 
 .flush-button {
-    height: 64px;
+    /* height: 64px; */
     width: 70%;
     max-width: 320px;
     font-family: "Roboto Mono", monospace;
