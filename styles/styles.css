@@ -187,12 +187,12 @@ html {
 
 @keyframes vibrate-animation {
     0% {
-        transform: skew(3deg, 1deg);
+        transform: skew(0.2px, 0.5deg);
 
     }
 
     100% {
-        transform: skew(-3deg, -1deg);
+        transform: skew(-0.2deg, -0.5deg);
     }
 
 }

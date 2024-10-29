@@ -70,7 +70,7 @@ function flush() {
     acceleration = 0
     depth = 500
 
-    document.querySelector("#title-logo ").classList.add("vibrate")
+    document.querySelector("body").classList.add("vibrate")
     flushButton.classList.add("flush-button-animate")
     flushButton.disabled = true
     function flusher() {
@@ -109,7 +109,7 @@ function flush() {
         }
         else {
             textbox.value = ""
-            document.querySelector("#title-logo ").classList.remove("vibrate")
+            document.querySelector("body").classList.remove("vibrate")
             flushButton.disabled = false
             flushButton.classList.remove("flush-button-animate")
             loopPlaceholder()
