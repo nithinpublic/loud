@@ -49,6 +49,29 @@ flushButton.addEventListener("click", () => {
     
 })
 
+colorValue = 180
+function setColorValue(value){
+    colorValue = value
+}
+function getRotatedColor() {
+    colorValue -= 1.5;
+    if(colorValue<=0){
+        colorValue = 0
+    }
+    return String("hsl(" + colorValue + "," + "70%,80%)");
+}
+
+function flushColor() {
+    colorValue += 2;
+    return String("hsl(" + colorValue + "," + "100%,50%)");
+}
+
+textbox.addEventListener("keypress", ()=>{
+    console.log("key");
+    textbox.style.color = getRotatedColor()
+    
+})
+
 String.prototype.replaceAt = function (index, replacement) {
     return this.substring(0, index) + replacement + this.substring(index + replacement.length);
 }
@@ -73,6 +96,7 @@ function flush() {
     document.querySelector("body").classList.add("vibrate")
     flushButton.classList.add("flush-button-animate")
     flushButton.disabled = true
+    setColorValue(0)
     function flusher() {
         if (i < 2 * depth) {
             if (i <= wateredText.length) {
@@ -102,6 +126,7 @@ function flush() {
             i = i + 1 + acceleration
             acceleration = acceleration + 0.1
             textbox.value = airgap + wateredText
+            textbox.style.color = flushColor()
             console.log(i);
 
             // setTimeout(flusher, (500 / (i + 1)) + 10)
@@ -112,6 +137,7 @@ function flush() {
             document.querySelector("body").classList.remove("vibrate")
             flushButton.disabled = false
             flushButton.classList.remove("flush-button-animate")
+            setColorValue(180)
             loopPlaceholder()
         }
     }
