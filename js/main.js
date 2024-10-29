@@ -55,14 +55,14 @@ function setColorValue(value){
 }
 function getRotatedColor() {
     colorValue -= 1.5;
-    if(colorValue<=0){
-        colorValue = 0
+    if(colorValue<=1){
+        colorValue = 1
     }
-    return String("hsl(" + colorValue + "," + "70%,80%)");
+    return String("hsl(" + colorValue + "," + "70%," + (colorValue/5+50) + "%)");
 }
 
 function flushColor() {
-    colorValue += 2;
+    colorValue += 1.8;
     return String("hsl(" + colorValue + "," + "100%,50%)");
 }
 
