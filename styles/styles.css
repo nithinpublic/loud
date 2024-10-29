@@ -9,21 +9,6 @@ html {
 
 }
 
-
-
-#title-container {
-    text-align: left;
-    /* width: calc(100% - 128px); */
-}
-
-#title-text {
-    font-size: 64px;
-    font-family: "Roboto Mono", monospace;
-    font-weight: 500;
-    color: #6e6c78;
-    padding: 32px;
-}
-
 #title-logo {
     /* height: 64px; */
     width: 100%;
@@ -33,9 +18,11 @@ html {
 
 #textarea {
     width: calc(100% - 64px);
+    max-width: 390px;
     height: calc(100% - 290px);
     border: none;
     background-color: transparent;
+    /* background-color: #ffae0003; */
     padding: 16px;
     font-size: 24px;
     resize: none;
