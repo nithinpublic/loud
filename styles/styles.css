@@ -25,9 +25,9 @@ html {
 }
 #textarea {
     width: calc(100% - 64px);
-    height: calc(100% - 340px);
+    height: calc(100% - 320px);
     border: none;
-    background-color: #fffef7;
+    background-color: transparent;
     padding: 16px;
     font-size: 24px;
     resize: none;
@@ -49,21 +49,52 @@ html {
     max-width: 320px;
     font-family: "Roboto Mono", monospace;
     font-size: 24px;
-    /* background-color: #101030; */
     background-color: #F3594E;
+    background: #F3594E url('/images/flush_wave_bg.png');
+    background-size: contain;
+    background-position-x: 0px;
+
+
+
     /* border: #000000 solid 1px; */
     border: none;
     outline: none;
     border-radius: 16px;
     color: #ffffff;
     margin: 16px;
-    box-shadow: -3px 3px 0px #C91C25, inset 0px 0px 70px #00137230;
+    /* box-shadow: -3px 3px 0px #C91C25, inset 0px 0px 70px #00137230; */
     line-height: 0px;
     padding: 48px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 16px;
+
+    
+
+}
+.flush-button-animate {
+    animation: waves 400ms infinite linear;
+}
+@keyframes waves {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 45px;
+    }
+
+    
 }
 #flush-button:active {
     box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #00137200;
     translate: -3px 3px;
+}
+.button-icon {
+    height: 32px;
+    translate: 0% -50%;
+    margin-right: 16px;
+
 }
 
 

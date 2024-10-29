@@ -54,6 +54,7 @@ function flush() {
     depth = 500
 
     document.querySelector("#title-logo ").classList.add("vibrate")
+    flushButton.classList.add("flush-button-animate")
     flushButton.disabled = true
     function flusher() {
         if (i < 2 * depth) {
@@ -93,6 +94,7 @@ function flush() {
             textbox.value = ""
             document.querySelector("#title-logo ").classList.remove("vibrate")
             flushButton.disabled = false
+            flushButton.classList.remove("flush-button-animate")
         }
     }
     flusher()
