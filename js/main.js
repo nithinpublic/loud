@@ -61,6 +61,7 @@ function flush() {
     waterElements = "░▒▓█"
     // waterElements = "AB"
 
+    // airgapElement = "\u00a0"
     airgapElement = "\n"
     // airgapElement = "X"
     airgap = ""
@@ -94,11 +95,11 @@ function flush() {
                 console.log("rand=", randomCharacter);
             }
             if (i >= depth) {
-                // airgap += airgapElement
-                airgap = ""
-                for(j=0;j<=i;j++){
-                    airgap +=  airgapElement
-                }
+                airgap += airgapElement
+                // airgap = ""
+                // for(j=0;j<=i;j++){
+                //     airgap +=  airgapElement
+                // }
             }
             i = i + 1 + acceleration
             acceleration = acceleration + 0.1
