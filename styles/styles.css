@@ -85,6 +85,7 @@ html {
     box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #00137200;
     translate: -3px 3px;
     background: #F3594E url('../images/flush_wave_bg.png');
+    color: transparent;
     animation: waves 400ms infinite linear;
 }
 
