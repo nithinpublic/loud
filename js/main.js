@@ -1,13 +1,15 @@
 console.clear()
+var flushSound = new Audio('audio/flush_sound.mp3');
+var errorSound = new Audio('audio/error.mp3')
 
-function playMusic() {
-    var music = new Audio('audio/flush_sound.mp3');
-    music.play();
-}
-function playErrorSound() {
-    var music = new Audio('audio/error.mp3')
-    music.play()
-}
+// function playMusic() {
+//     var music = new Audio('audio/flush_sound.mp3');
+//     music.play();
+// }
+// function playErrorSound() {
+//     var music = new Audio('audio/error.mp3')
+//     music.play()
+// }
 
 
 textbox = document.querySelector("textarea")
@@ -16,11 +18,11 @@ flushButton = document.querySelector("#flush-button")
 flushButton.addEventListener("click", () => {
     if (textbox.value) {
         flush()
-        playMusic()
+        flushSound.play()
     }
     else {
         
-        playErrorSound()
+        errorSound.play()
         flushButton.classList.add("shake")
         textbox.classList.add("flash-red")
         setTimeout(() => { 
