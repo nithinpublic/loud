@@ -19,7 +19,7 @@ String.prototype.replaceAt = function (index, replacement) {
 function flush() {
     userInput = textbox.value
     waterElements = "qwertyuiopa♥♥♥sdfghjk♥♥♥lzxcvbnmQWE♥♥♥RTYUIOPASDFGHJKLZXCVBNM1234567890@#%&œþ¥øßðƒ©♥♥♥●₳"
-    // waterElements = "░▒▓█"
+    waterElements = "░▒▓█"
     // waterElements = "AB"
 
     airgapElement = "\u00a0"
