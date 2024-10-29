@@ -8,15 +8,14 @@ flushButton = document.querySelector("#flush-button")
 
 
 placeholderContent = [
-    "Type your loud thoughts...",
-    "Type your bottled up anger...",
-    "Type your negative feelings...",
-    "Type your worries...",
-    "Type your noise...",
-    "Don't hold back...",
-    "Type anything...",
-    "And watch them go away...",
-    "And watch them go away..."
+    "Type your loud thoughts ...",
+    "Type your anger ...",
+    "Type your negative feelings ...",
+    "Type your worries ...",
+    "Type your noise ...",
+    "Type anything ...",
+    "And see them go away ...",
+    "And see them go away ..."
 ]
 pi = 0
 function loopPlaceholder() {
