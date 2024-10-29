@@ -60,6 +60,8 @@ html {
     box-shadow: -3px 3px 0px #C91C25;
 }
 
+
+
 .flash-red {
     animation: flash-animation 300ms 1 linear;
 }
@@ -81,3 +83,18 @@ html {
     75% { transform: translateX(5px) }
     100% { transform: translateX(-5px) }
    }
+
+.vibrate {
+    animation: vibrate-animation 50ms infinite linear;
+}
+
+@keyframes vibrate-animation {
+    0% {
+        transform: skew(3deg,1deg);
+
+    }
+    100% {
+        transform: skew(-3deg, -1deg);
+    }
+    
+}

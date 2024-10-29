@@ -51,6 +51,7 @@ function flush() {
     acceleration = 0
     depth = 500
 
+    document.querySelector("#title-logo ").classList.add("vibrate")
     function flusher() {
         if (i < 2 * depth) {
             if (i <= wateredText.length) {
@@ -87,6 +88,7 @@ function flush() {
         }
         else {
             textbox.value = ""
+            document.querySelector("#title-logo ").classList.remove("vibrate")
         }
     }
     flusher()
