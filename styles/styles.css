@@ -13,7 +13,7 @@ html {
 
 #title-container {
     text-align: left;
-    width: calc(100% - 128px);
+    /* width: calc(100% - 128px); */
 }
 
 #title-text {
@@ -25,7 +25,9 @@ html {
 }
 
 #title-logo {
-    height: 64px;
+    /* height: 64px; */
+    width: 100%;
+    max-width: 320px;
     padding: 32px;
 }
 
