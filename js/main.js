@@ -13,9 +13,7 @@ placeholderContent = [
     "Type your negative feelings ...",
     "Type your worries ...",
     "Type your noise ...",
-    "Type anything ...",
-    "And see them go away ...",
-    "And see them go away ..."
+    "Type anything ..."
 ]
 pi = 0
 function loopPlaceholder() {    

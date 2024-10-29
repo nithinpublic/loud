@@ -5,6 +5,7 @@ html {
     margin: 0;
     text-align: center;
     background-color: #fffef7;
+    background-color: #17172D;
 
 }
 
@@ -40,10 +41,12 @@ html {
     white-space: pre-wrap;
     word-wrap: break-word;
     border-radius: 16px;
+    color: #ffffff;
 
 }
 #textarea::placeholder {
-    color: #f8555890;
+    color: #832d2f90;
+    color: #8f91ec;
 }
 
 #textarea:focus {
@@ -58,6 +61,7 @@ html {
     font-family: "Roboto Mono", monospace;
     font-size: 24px;
     background-color: #F3594E;
+    background-color: #8d59ba;
     /* background: #F3594E url('../images/flush_wave_bg.png'); */
     background-size: contain;
     background-position-x: 0px;
@@ -70,7 +74,7 @@ html {
     border-radius: 16px;
     color: #ffffff;
     margin: 16px;
-    box-shadow: -3px 3px 0px #C91C25, inset 0px 0px 70px #00137230;
+    box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #0013721f;
     line-height: 0px;
     padding: 48px;
     display: flex;
@@ -84,8 +88,8 @@ html {
 
 .flush-button-animate {
     box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #00137200;
-    translate: -3px 3px;
-    background: #F3594E url('../images/flush_wave_bg.png');
+    translate: 0px 3px;
+    background: #8d59ba url('../images/flush_wave_bg.png');
     color: transparent;
     animation: waves 400ms infinite linear;
 }
@@ -104,7 +108,7 @@ html {
 
 #flush-button:active {
     box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #00137200;
-    translate: -3px 3px;
+    translate: 0px 3px;
 }
 
 .button-icon {
@@ -122,19 +126,19 @@ html {
 
 @keyframes flash-animation {
     0% {
-        background-color: #e58f93;
+        background-color: #c08cc934;
     }
 
     25% {
-        background-color: #fffef7;
+        background-color: transparent;
     }
 
     75% {
-        background-color: #e58f93;
+        background-color: #c08cc934;
     }
 
     100% {
-        background-color: #fffef7;
+        background-color: transparent;
     }
 
 }
@@ -146,35 +150,35 @@ html {
 @keyframes shake-animation {
     0% {
         transform: translateX(-20px);
-        box-shadow: 9px 3px 0px #C91C25;
+        box-shadow: 9px 0px 0px #c3bf70;
         padding-left: 16px;
         padding-right: 0px;
     }
 
     25% {
         transform: translateX(10px);
-        box-shadow: -6px 3px 0px #C91C25;
+        box-shadow: -6px 0px 0px #94fff4;
         padding-left: 0px;
         padding-right: 16px;
     }
 
     50% {
         transform: translateX(-10px);
-        box-shadow: 6px 3px 0px #C91C25;
+        box-shadow: 6px 0px 0px #94fff4;
         padding-left: 16px;
         padding-right: 0px;
     }
 
     75% {
         transform: translateX(5px);
-        box-shadow: -3px 3px 0px #C91C25;
+        box-shadow: -3px 0px 0px #94fff4;
         padding-left: 0px;
         padding-right: 16px;
     }
 
     100% {
         transform: translateX(-5px);
-        box-shadow: 3px 3px 0px #C91C25;
+        box-shadow: 3px 0px 0px #94fff4;
         padding-left: 16px;
         padding-right: 0px;
     }
