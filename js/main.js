@@ -5,7 +5,7 @@ function playMusic() {
     music.play();
 }
 function playErrorSound() {
-    var music = new Audio('audio/error.ogg')
+    var music = new Audio('audio/error.mp3')
     music.play()
 }
 
