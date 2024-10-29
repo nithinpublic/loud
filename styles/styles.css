@@ -28,14 +28,14 @@ html {
     height: calc(100% - 240px);
     border: none;
     background-color: #fffef7;
-    padding: 0px;
+    padding: 16px;
     font-size: 24px;
-    /* border-radius: 32px 32px 160px 160px; */
     resize: none;
     line-height: 1;
     font-family: "Roboto Mono", monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
+    border-radius: 16px;
     
 }
 #textarea:focus {
@@ -59,3 +59,25 @@ html {
     margin: 16px;
     box-shadow: -3px 3px 0px #C91C25;
 }
+
+.flash-red {
+    animation: flash-animation 300ms 1 linear;
+}
+@keyframes flash-animation {
+    0% { background-color: #e58f93;}
+    25% { background-color: #fffef7;}
+    75% { background-color: #e58f93;}
+    100% { background-color: #fffef7;}
+    
+}
+
+.shake {
+    animation: shake-animation 300ms 1 linear;
+}
+@keyframes shake-animation {
+    0% { transform: translateX(-20px) }
+    25% { transform: translateX(10px) }
+    50% { transform: translateX(-10px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(-5px) }
+   }

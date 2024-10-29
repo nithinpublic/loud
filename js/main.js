@@ -4,12 +4,31 @@ function playMusic() {
     var music = new Audio('audio/flush_sound.mp3');
     music.play();
 }
+function playErrorSound() {
+    var music = new Audio('audio/error.ogg')
+    music.play()
+}
+
 
 textbox = document.querySelector("textarea")
+flushButton = document.querySelector("#flush-button")
 
-document.querySelector("#flush-button").addEventListener("click", () => {
-    flush()
-    playMusic()
+flushButton.addEventListener("click", () => {
+    if (textbox.value) {
+        flush()
+        playMusic()
+    }
+    else {
+        
+        playErrorSound()
+        flushButton.classList.add("shake")
+        textbox.classList.add("flash-red")
+        setTimeout(() => { 
+            flushButton.classList.remove("shake")
+            textbox.classList.remove("flash-red")          
+        }, 300);
+    }
+    
 })
 
 String.prototype.replaceAt = function (index, replacement) {
@@ -66,12 +85,11 @@ function flush() {
             // setTimeout(flusher, (500 / (i + 1)) + 10)
             setTimeout(flusher, 30)
         }
+        else {
+            textbox.value = ""
+        }
     }
+    flusher()
 
-    if (textbox.value) {
-        flusher()
-    }
-    else {
-        textbox.style.border = "#ff0000 solid 2px"
-    }
+    
 }
