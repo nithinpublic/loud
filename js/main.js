@@ -18,9 +18,7 @@ placeholderContent = [
     "And see them go away ..."
 ]
 pi = 0
-function loopPlaceholder() {
-    console.log("looper");
-    
+function loopPlaceholder() {    
     textbox.placeholder = placeholderContent[pi]
     pi ++
     if(pi>=placeholderContent.length){
@@ -29,7 +27,6 @@ function loopPlaceholder() {
 
     setTimeout(() => {
         if(document.querySelector("#textarea:placeholder-shown")){
-            console.log("xo");
             loopPlaceholder()
         }
     }, 1500);
