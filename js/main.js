@@ -61,7 +61,7 @@ function flush() {
     waterElements = "░▒▓█"
     // waterElements = "AB"
 
-    airgapElement = "\u00a0"
+    airgapElement = "\n"
     // airgapElement = "X"
     airgap = ""
 
