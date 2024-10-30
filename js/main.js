@@ -16,15 +16,15 @@ placeholderContent = [
     "Type anything ..."
 ]
 pi = 0
-function loopPlaceholder() {    
+function loopPlaceholder() {
     textbox.placeholder = placeholderContent[pi]
-    pi ++
-    if(pi>=placeholderContent.length){
+    pi++
+    if (pi >= placeholderContent.length) {
         pi = 0
     }
 
     setTimeout(() => {
-        if(document.querySelector("#textarea:placeholder-shown")){
+        if (document.querySelector("#textarea:placeholder-shown")) {
             loopPlaceholder()
         }
     }, 1500);
@@ -37,28 +37,28 @@ flushButton.addEventListener("click", () => {
         flushSound.play()
     }
     else {
-        
+
         errorSound.play()
         flushButton.classList.add("shake")
         textbox.classList.add("flash-red")
-        setTimeout(() => { 
+        setTimeout(() => {
             flushButton.classList.remove("shake")
-            textbox.classList.remove("flash-red")          
+            textbox.classList.remove("flash-red")
         }, 300);
     }
-    
+
 })
 
 colorValue = 180
-function setColorValue(value){
+function setColorValue(value) {
     colorValue = value
 }
 function getRotatedColor() {
     colorValue -= 1.5;
-    if(colorValue<=1){
+    if (colorValue <= 1) {
         colorValue = 1
     }
-    return String("hsl(" + colorValue + "," + "70%," + (colorValue/5+50) + "%)");
+    return String("hsl(" + colorValue + "," + "70%," + (colorValue / 5 + 50) + "%)");
 }
 
 function flushColor() {
@@ -66,10 +66,10 @@ function flushColor() {
     return String("hsl(" + colorValue + "," + "100%,50%)");
 }
 
-textbox.addEventListener("keypress", ()=>{
+textbox.addEventListener("keypress", () => {
     console.log("key");
     textbox.style.color = getRotatedColor()
-    
+
 })
 
 String.prototype.replaceAt = function (index, replacement) {
@@ -102,10 +102,10 @@ function flush() {
             if (i <= wateredText.length) {
                 console.log("Hi");
                 flushButton.innerHTML = "atomizing"
-                
+
 
             }
-            
+
             if (i >= userInput.length && i < depth) {
                 randomCharacter = waterElements.charAt(Math.floor((waterElements.length) * (Math.random())))
                 wateredText += randomCharacter
@@ -147,5 +147,5 @@ function flush() {
     }
     flusher()
 
-    
+
 }

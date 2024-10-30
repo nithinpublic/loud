@@ -8,23 +8,16 @@ function getRandomColor() {
 noiseCharSet = "███████████████████▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒░░LOUD"
 screenDepth = 200
 
-function fillSplashScreen(){    
+function fillSplashScreen() {
     splashScreen.innerHTML = ""
-    for (i=0;i<screenDepth;i++){
-        //splashScreen.innerHTML += noiseCharSet.charAt(Math.floor((noiseCharSet.length) * (Math.random())))
+    for (i = 0; i < screenDepth; i++) {
         randomChar = noiseCharSet.charAt(Math.floor((noiseCharSet.length) * (Math.random())))
-        splashScreen.innerHTML +=String("<span style='color:"+getRandomColor()+";'>"+randomChar+"</span>")
-        // if(randomChar == "L" || randomChar == "O" || randomChar == "U" || randomChar == "D"){
-        //     splashScreen.innerHTML +=String("<span style='color:"+"yellow"+";'>"+randomChar+"</span>")
-
-        // } else {
-        //     splashScreen.innerHTML +=String("<span style='color:"+getRandomColor()+";'>"+randomChar+"</span>")
-        // }
+        splashScreen.innerHTML += String("<span style='color:" + getRandomColor() + ";'>" + randomChar + "</span>")
     }
-    if(splashScreen.style.display != "none"){
+    if (splashScreen.style.display != "none") {
         setTimeout(() => {
             fillSplashScreen()
-        }, 10);
+        }, 20);
     }
 }
 fillSplashScreen()

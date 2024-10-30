@@ -19,12 +19,10 @@ html {
     font-family: "Roboto Mono", monospace;
     font-size: 64px;
     line-height: 1;
-
     margin: 0px;
     padding: 0;
     border: none;
     outline: none;
-
     word-wrap: break-word;
 }
 
@@ -52,9 +50,10 @@ html {
     border-radius: 16px;
     color: #ffffff;
 
-    
+
 
 }
+
 #textarea::placeholder {
     color: #832d2f90;
     color: #8f91ec;
