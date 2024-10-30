@@ -101,6 +101,7 @@ function flush() {
         if (i < 2 * depth) {
             if (i <= wateredText.length) {
                 console.log("Hi");
+                flushButton.innerHTML = "atomizing"
                 
 
             }
@@ -109,6 +110,7 @@ function flush() {
                 randomCharacter = waterElements.charAt(Math.floor((waterElements.length) * (Math.random())))
                 wateredText += randomCharacter
                 console.log("adding random at end");
+                flushButton.innerHTML = "flushing"
 
             }
             for (j = 0; j <= i; j++) {
@@ -122,6 +124,7 @@ function flush() {
                 // for(j=0;j<=i;j++){
                 //     airgap +=  airgapElement
                 // }
+                flushButton.innerHTML = "clearing"
             }
             i = i + 1 + acceleration
             acceleration = acceleration + 0.1
@@ -139,6 +142,7 @@ function flush() {
             flushButton.classList.remove("flush-button-animate")
             setColorValue(180)
             loopPlaceholder()
+            flushButton.innerHTML = "Flush"
         }
     }
     flusher()
