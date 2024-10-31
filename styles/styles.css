@@ -61,6 +61,7 @@ html {
     color: #8d59ba;
     color: #71FFFF;
     color: #EAEC45;
+    filter: opacity(0.5);
 }
 
 #textarea:focus {
