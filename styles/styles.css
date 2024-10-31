@@ -24,6 +24,7 @@ html {
     border: none;
     outline: none;
     word-wrap: break-word;
+    /* display: none; */
 }
 
 #title-logo {
@@ -59,6 +60,7 @@ html {
     color: #8f91ec;
     color: #8d59ba;
     color: #71FFFF;
+    color: #EAEC45;
 }
 
 #textarea:focus {
@@ -77,6 +79,7 @@ html {
     background-color: #F3594E;
     background-color: #8d59ba;
     background-color: #71FFFF;
+    background-color: #EAEC45;
     /* background: #F3594E url('../images/flush_wave_bg.png'); */
     background-size: contain;
     background-position-x: 0px;
@@ -84,9 +87,10 @@ html {
     border: none;
     outline: none;
     border-radius: 16px;
-    color: #ffffff;
+    color: #000;
+    /* text-shadow: -2px 1px #000a7bae; */
     margin: 16px;
-    box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #0013721f;
+    /* box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #0013721f; */
     line-height: 0px;
     padding: 40px;
     /* display: flex;
@@ -96,7 +100,7 @@ html {
 }
 
 .flush-button-animate {
-    box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #00137200;
+    /* box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #00137200; */
     translate: 0px 3px;
     font-family: "Roboto Mono", monospace;
     font-style: normal;

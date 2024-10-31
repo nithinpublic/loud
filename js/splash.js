@@ -6,7 +6,7 @@ function getRandomColor() {
 }
 
 noiseCharSet = "███████████████████▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒░░LOUD"
-screenDepth = 200
+screenDepth = 250
 
 function fillSplashScreen() {
     splashScreen.innerHTML = ""
