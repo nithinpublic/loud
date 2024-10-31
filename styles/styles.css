@@ -48,7 +48,7 @@ html {
     font-family: "Roboto Mono", monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
-    border-radius: 16px;
+    border-radius: 8px;
     color: #ffffff;
 
 
@@ -75,7 +75,7 @@ html {
     max-width: 320px;
     font-family: "Open Sans", "Roboto Mono", monospace;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 32px;
     background-color: #F3594E;
     background-color: #8d59ba;
@@ -87,11 +87,11 @@ html {
     /* border: #000000 solid 1px; */
     border: none;
     outline: none;
-    border-radius: 16px;
-    color: #000;
-    /* text-shadow: -2px 1px #000a7bae; */
+    border-radius: 8px;
+    color: #17172D;
+    /* text-shadow: -2px 1px #FAC739; */
     margin: 16px;
-    /* box-shadow: 0px 0px 0px #C91C25, inset 0px 0px 70px #0013721f; */
+    /* box-shadow: -4px 4px 0px #FAC739; */
     line-height: 0px;
     padding: 40px;
     /* display: flex;
@@ -145,7 +145,7 @@ html {
 
 @keyframes flash-animation {
     0% {
-        background-color: #8d59ba1c;
+        background-color: #e9ec451c;
     }
 
     25% {
@@ -153,7 +153,7 @@ html {
     }
 
     75% {
-        background-color: #8d59ba1c;
+        background-color: #e9ec451c;
     }
 
     100% {
@@ -169,35 +169,35 @@ html {
 @keyframes shake-animation {
     0% {
         transform: translateX(-20px);
-        box-shadow: 9px 0px 0px yellow;
+        box-shadow: 9px 0px 0px #FF396F;
         padding-left: 16px;
         padding-right: 0px;
     }
 
     25% {
         transform: translateX(10px);
-        box-shadow: -6px 0px 0px yellow;
+        box-shadow: -6px 0px 0px #FF396F;
         padding-left: 0px;
         padding-right: 16px;
     }
 
     50% {
         transform: translateX(-10px);
-        box-shadow: 6px 0px 0px yellow;
+        box-shadow: 6px 0px 0px #FF396F;
         padding-left: 16px;
         padding-right: 0px;
     }
 
     75% {
         transform: translateX(5px);
-        box-shadow: -3px 0px 0px yellow;
+        box-shadow: -3px 0px 0px #FF396F;
         padding-left: 0px;
         padding-right: 16px;
     }
 
     100% {
         transform: translateX(-5px);
-        box-shadow: 3px 0px 0px yellow;
+        box-shadow: 3px 0px 0px #FF396F;
         padding-left: 16px;
         padding-right: 0px;
     }
