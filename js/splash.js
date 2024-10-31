@@ -19,11 +19,11 @@ dissipate = false
 
 setTimeout(() => {
     dissipate = true
-}, 300);
+}, 500);
 
 setTimeout(() => {
     splashScreen.style.display = "none"
-}, 700);
+}, 800);
 
 function fillSplashScreen() {
     splashScreen.innerHTML = ""
