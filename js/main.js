@@ -1,4 +1,4 @@
-console.clear()
+// console.clear()
 var flushSound = new Audio('audio/flush_sound.mp3');
 var errorSound = new Audio('audio/error.mp3')
 
