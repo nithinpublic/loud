@@ -5,7 +5,7 @@ function getRandomColor() {
     return String("hsl(" + color + "," + "75%,42%)");
 }
 function getRandomColorFromSet() {
-    colors = ["#EAEC45", "#FF396F", "#71FFFF", "#FFFFFF", "#17172D"]
+    colors = ["#EAEC45", "#FF396F", "#71FFFF", "#C5FF1D", "#FFFFFF", "#17172D"]
     return colors[Math.floor(colors.length*(Math.random()))]
 }
 console.log("dfsdf");
@@ -24,7 +24,7 @@ function fillSplashScreen() {
     if (splashScreen.style.display != "none") {
         setTimeout(() => {
             fillSplashScreen()
-        }, 20);
+        }, 40);
     }
 }
 fillSplashScreen()
