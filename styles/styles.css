@@ -58,6 +58,7 @@ html {
     color: #832d2f90;
     color: #8f91ec;
     color: #8d59ba;
+    color: #71FFFF;
 }
 
 #textarea:focus {
@@ -75,6 +76,7 @@ html {
     font-size: 32px;
     background-color: #F3594E;
     background-color: #8d59ba;
+    background-color: #71FFFF;
     /* background: #F3594E url('../images/flush_wave_bg.png'); */
     background-size: contain;
     background-position-x: 0px;
@@ -100,7 +102,8 @@ html {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    background: #C91C25 url('../images/flush_wave_bg.png');
+    /* background: #C91C25 url('../images/flush_wave_bg.png'); */
+    background: #FF396F url('../images/flush_wave_bg.png');
     /* color: transparent; */
     animation: waves 400ms infinite linear;
 }
