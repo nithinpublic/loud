@@ -100,7 +100,7 @@ html {
     color: #FF396F;
     text-shadow: 1px 1px #ffffff, -0.5px -0.5px #0002815e;
     margin: 16px;
-    box-shadow: inset -4px -4px 4px #0a007931, inset 4px 4px #ffffff35;
+    box-shadow: inset -1px -1px 0px #0a00796c, inset 1px 1px 0px #ffffff3b;
     line-height: 0px;
     padding: 40px;
     /* display: flex;
@@ -113,9 +113,9 @@ html {
     content: "";
     background-color: transparent;
     position: absolute;
-    inset: 5px;
-    border-radius: 5px;
-    box-shadow: -2px -2px 4px #ffffff83, 1px 1px 9px #0a00794b ,inset -4px -4px 20px #ffffff68,inset 8px 8px 20px #0a00792c;
+    inset: 1px;
+    border-radius: 7px;
+    box-shadow: inset -2px -8px 10px #ffffff35,inset 2px 8px 20px #05003f35;
 
 }
 
