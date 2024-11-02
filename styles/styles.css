@@ -32,7 +32,7 @@ html {
     
 
     
-    /* display: none; */
+    display: none;
 }
 
 #title-logo {
@@ -97,15 +97,26 @@ html {
     outline: none;
     border-radius: 8px;
     color: #17172D;
-    /* text-shadow: -2px 1px #FAC739; */
+    color: #FF396F;
+    text-shadow: 1px 1px #ffffff, -0.5px -0.5px #0002815e;
     margin: 16px;
-    /* box-shadow: -4px 4px 0px #FAC739; */
+    box-shadow: inset -4px -4px 4px #0a007931, inset 4px 4px #ffffff35;
     line-height: 0px;
     padding: 40px;
     /* display: flex;
     justify-content: center;
     margin: auto; */
     margin-top: 16px;
+    position: relative;
+}
+.flush-button::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    inset: 5px;
+    border-radius: 5px;
+    box-shadow: -2px -2px 4px #ffffff83, 1px 1px 9px #0a00794b ,inset -4px -4px 20px #ffffff68,inset 8px 8px 20px #0a00792c;
+
 }
 
 .flush-button-animate {
