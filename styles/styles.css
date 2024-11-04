@@ -64,14 +64,8 @@ html {
 }
 
 #textarea::placeholder {
-    color: #832d2f90;
-    color: #8f91ec;
-    color: #8d59ba;
-    color: #71FFFF;
     color: #EAEC45;
     filter: opacity(0.5);
-
-    
 }
 
 #textarea:focus {
@@ -88,26 +82,19 @@ html {
     font-weight: 700;
     font-size: 32px;
     background-color: #F3594E;
-    background-color: #8d59ba;
-    background-color: #71FFFF;
     background-color: #EAEC45;
-    /* background: #F3594E url('../images/flush_wave_bg.png'); */
     background-size: contain;
     background-position-x: 0px;
-    /* border: #000000 solid 1px; */
     border: none;
     outline: none;
     border-radius: 8px;
     color: #17172D;
-    color: #FF396F;
+    /* color: #FF396F; */
     text-shadow: 1px 1px #ffffff, -0.5px -0.5px #0002815e;
     margin: 16px;
-    box-shadow: inset -1px -1px 0px #0a00796c, inset 1px 1px 0px #ffffff3b;
+    /* box-shadow: inset 1px 1px 0px #ffffff3b; */
     line-height: 0px;
     padding: 40px;
-    /* display: flex;
-    justify-content: center;
-    margin: auto; */
     margin-top: 16px;
     position: relative;
     
@@ -118,7 +105,7 @@ html {
     position: absolute;
     inset: 1px;
     border-radius: 7px;
-    box-shadow: inset -2px -8px 10px #ffffff35,inset 2px 8px 20px #05003f35;
+    box-shadow: inset 2px 8px 20px #05003f1f;
 
 }
 
